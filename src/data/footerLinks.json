@@ -1,0 +1,116 @@
+[
+    {
+        "title":"abaut",
+        "links": [
+            {
+                "name":"About Welly",
+                "path": "/about"
+            },
+            {
+                "name":"Careers",
+                "path": "/"
+            },
+            {
+                "name":"Social Media",
+                "path": "/"
+            },
+            {
+                "name":"Affiliates",
+                "path": "/"
+            },
+            {
+                "name":"Supply Chain",
+                "path": "/"
+            },
+            {
+                "name":"Sitemap",
+                "path": "/"
+            },
+            {
+                "name":"Global Sites",
+                "path": "/"
+            }
+        
+        ]
+    },
+
+    {
+        "title":"skincare",
+        "links": [
+            {
+                "name":"Makeup",
+                "path": "/"
+            },
+            {
+                "name":"skincare",
+                "path": "/"
+            },
+            {
+                "name":"Fragrance",
+                "path": "/"
+            }
+        ]
+    },
+
+    {
+        "title":"makeup",
+        "links": [
+            {
+                "name":"Base",
+                "path": "/"
+            },
+            {
+                "name":"contour",
+                "path": "/"
+            },
+            {
+                "name":"Eye makeup",
+                "path": "/"
+            },
+            {
+                "name":"Lips",
+                "path": "/"
+            }
+        
+        ]
+    },
+
+    {
+        "title":"supplements",
+        "links": [
+            {
+                "name":"Hair and nails",
+                "path": "/"
+            },
+            {
+                "name":"Vitamins",
+                "path": "/"
+            },
+            {
+                "name":"Nutrients",
+                "path": "/"
+            }
+        
+        ]
+    },
+
+    {
+        "title":"luxury",
+        "links": [
+            {
+                "name":"Makeup",
+                "path": "/"
+            },
+            {
+                "name":"Skincare",
+                "path": "/"
+            },
+            {
+                "name":"fragrance",
+                "path": "/"
+            }
+        
+        ]
+    }
+
+]

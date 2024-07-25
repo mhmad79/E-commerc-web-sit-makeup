@@ -14,6 +14,7 @@ const LINKS = [
         path: '/about',
         name: 'About'
     }
+   
 ];
 
 const Navlinks = () => {

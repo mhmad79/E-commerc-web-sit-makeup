@@ -26,8 +26,7 @@ const Navlinks = () => {
                     to={link.path} 
                     className={({ isActive }) => 
                         isActive ? "text-yellow text-sm mr-8 lowercase" : 
-                        "text-dark text-sm mr-8 lowercase"
-                    }
+                        "text-dark text-sm mr-8 lowercase" }
                 >
                     {link.name}
                 </NavLink>

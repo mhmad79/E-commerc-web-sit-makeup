@@ -1,27 +1,24 @@
-import React, { useEffect } from "react";
+import React from "react";
 import BouttonLink from "../BouttonLink";
 import SectionTitle from "../SectionTitle";
 import SecondaryBanner from "../SecondaryBanner";
-import useGetProducts from "../../hooks/userGetProducts";
+import useGetTopProducts from "../../hooks/useGetTopProducts";
 import ProductCard from "../ProductCard";
 
 
 
 const TopProducts =() => {
 
-    const { products, getTopProducts  } = useGetProducts()
+    const  products  = useGetTopProducts()
 
-    useEffect(() => {
-        getTopProducts();
-    }, [getTopProducts]);
     return (
-        <div className=" container mx-auto">
+        <div className=" container mx-auto md:mt-20">
             <div className=" flex items-center justify-between mb-6">
                 <SectionTitle text="Top products" /> 
-                <BouttonLink path="/about" text="see more" isMain />
+                <BouttonLink path="/about" text="see more" isMain className=' hidden md:block' />
             </div>
                 {/* products */}
-                <div className=' flex flex-wrap justify-center'>
+                <div className=' flex flex-wrap justify-center mb-10'>
                     {products.map(product => (
 
                 <ProductCard

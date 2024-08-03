@@ -19,6 +19,9 @@ module.exports = {
         light: '#FAFAFA',
       }
     },
+    container: {
+      padding: '1rem',
+    },
   },
   plugins: [],
 }

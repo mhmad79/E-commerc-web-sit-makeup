@@ -8,7 +8,7 @@ function About() {
     return (
         <Fragment>
             <div className="flex">
-            <div className=" relative my-20 w-1/2 mx-auto">
+            <div className=" relative my-20 mx-auto">
                 <div className=" w-14 h-14 absolute
                     rounded-full bg-yellow top-0 -z-10 -ml-4 ">
 

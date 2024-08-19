@@ -6,9 +6,9 @@ const SecondaryBanner = () => {
     return (
         <div className=" container flex justify-between items-center mx-auto md:px-20 bg-green w-full">
             <div> 
-                <h4 className=" mb-4 font-font-krona text-light-grey">
+                <h3 className=" mb-4 font-font-krona text-light-grey">
                    Be natural <br/> be beautiful, <br/> be you.
-                    </h4>
+                    </h3>
                     <BouttonLink path="/about" text="see more" />
             </div>
             <div className=" ml-4">
@@ -16,7 +16,7 @@ const SecondaryBanner = () => {
                 className="py-8"
                 width="200" 
                 src={bannerImg}
-                alt="" />
+                alt="A bundle of Cream prducts " />
             </div>
         </div>
     )

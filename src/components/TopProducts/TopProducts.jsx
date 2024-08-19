@@ -4,6 +4,7 @@ import SectionTitle from "../SectionTitle";
 import SecondaryBanner from "../SecondaryBanner";
 import useGetTopProducts from "../../hooks/useGetTopProducts";
 import ProductCard from "../ProductCard";
+import Loaderr from "../Loaderr";
 
 
 
@@ -11,6 +12,7 @@ const TopProducts =() => {
 
     const  products  = useGetTopProducts()
 
+    
     return (
         <div className=" container mx-auto md:mt-20">
             <div className=" flex items-center justify-between mb-6">
@@ -19,18 +21,24 @@ const TopProducts =() => {
             </div>
                 {/* products */}
                 <div className=' flex flex-wrap justify-center mb-10'>
-                    {products.map(product => (
+                {products.length === 0 ? (
+                    <Loaderr classes=' my-4' />
+                ) : (
 
-                <ProductCard
+                <>
+                    {products.map(product => (
+                        <ProductCard
                         key={product.id}
                         id={product.id}
                         name={product.name}
                         brand={product.brand}
                         imgUrl={product.api_featured_image}
                         price={product.price}
-                />
+                        />
                     ))}
-                </div>
+                </>   
+            )}    
+        </div>
                 <SecondaryBanner />
         </div >
 

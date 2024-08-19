@@ -2,11 +2,14 @@ import React from "react";
 import useGetRecommendedProducts from '../../hooks/useGetRecommendedProduct'
 import ProductCard from "../ProductCard";
 import SectionTitle from "../SectionTitle/SectionTitle";
+import Loaderr from "../Loaderr";
 
 const RecommendedProducts = ({product}) => {
     const products = useGetRecommendedProducts(product)
 
-    if (products.length === 0) return null;
+    if (products.length === 0) return <div className=" h-96 flex justify-center items-center">  
+                        <Loaderr />  
+                </div> ;
     return(
         <>
         <SectionTitle text='For you' />

@@ -19,8 +19,8 @@ const Banner = () => {
             </div>
 
 
-            <div className=" ml-0 md:ml-4 mb-4 md:mb-0 py-10 md:py-0 w-2/3 md:w-full ">
-                <img  src={BannerImg} alt="" />
+            <div className=" flex justify-center ml-0 md:ml-4 mb-4 md:mb-0 py-10 md:py-0 w-2/3 md:w-full  ">
+                <img className="" src={BannerImg} alt="" />
             </div>
         </div>
         // ml-0 md:ml-4 mb-4 md:mb-0

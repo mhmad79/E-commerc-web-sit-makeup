@@ -1,6 +1,7 @@
 import React from "react";
+import PropTypes from 'prop-types'; 
 
-const ProductTitle = ({name, type}) => {
+const Title = ({name, type}) => {
     return (
         <div className=" mb-10">
         <h5 className=" font-font-krona text-sm"><p>{name}</p></h5>
@@ -10,4 +11,9 @@ const ProductTitle = ({name, type}) => {
     )
 }
 
-export default ProductTitle
+export default Title
+
+Title.propTypes = {
+    name: PropTypes.string.isRequired,
+    type: PropTypes.string.isRequired ,
+};

@@ -11,6 +11,7 @@ module.exports = {
       },
       colors: {
         dark: '#0C080B',
+        pinkyky: 'pink',
         green: '#1E3329',
         yellow: '#ffc94b',
         pink: "#fed2d1",

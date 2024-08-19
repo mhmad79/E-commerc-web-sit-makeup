@@ -7,8 +7,8 @@ const UniqueSalingPoint  = () => {
         <div className=" bg-light-grey relative -top-32 -z-10 pt-20 pb-16">
         <div className="container mx-auto flex items-center pt-20 pb-16 flex-col md:flex-row"> 
             
-        <div className=" mr-0 md:mr-4 mb-4 md:mb-0">
-            <img src={BannerImg} alt="" />
+        <div className=" mr-0 md:mr-4 mb-4 md:mb-0 ">
+            <img className="" src={BannerImg} alt="" />
         </div>
 
         <div>

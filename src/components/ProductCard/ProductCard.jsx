@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ProductPrice from "../ProductPrice";
+import Price from "../Price";
 
 const ProductCard = ({id, name, brand, imgUrl, price, }) => {
     return (
@@ -26,7 +26,7 @@ const ProductCard = ({id, name, brand, imgUrl, price, }) => {
 
                     <p className=" mb-4">{brand}</p>
 
-                    <ProductPrice price={price} />
+                    <Price price={price || '0'} />
 
             </div>
 

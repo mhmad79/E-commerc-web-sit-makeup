@@ -1,9 +1,11 @@
 import React from "react";
+import { useSearchStste } from "../../state/search-context";
 
 import Loaderr from "../Loaderr";
 import ProductCard from "../ProductCard";
 
-const Products = ({ products }) => {
+const Products = () => {
+    const [{ products }] = useSearchStste();
     return ( 
 
         <div className=' flex flex-wrap justify-center mb-10'>

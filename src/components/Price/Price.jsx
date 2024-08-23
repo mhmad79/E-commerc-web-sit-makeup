@@ -16,6 +16,6 @@ const Price = ({price = '0', isLarge = false}) => {
 export default Price
 
 Price.propTypes = {
-    price: PropTypes.string.isRequired,
+    price: PropTypes.string,
     isLarge: PropTypes.bool,
 };

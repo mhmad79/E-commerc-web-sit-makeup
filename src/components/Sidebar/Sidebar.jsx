@@ -3,6 +3,8 @@ import PriceRange from "../PriceRange";
 import CategoriesBar from "../CategoriesBar";
 
 const Sidebar = ({ setFilter }) => {
+
+
     return (
         <div className=" pl-6">
            <PriceRange />

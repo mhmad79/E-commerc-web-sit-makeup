@@ -2,7 +2,7 @@ import React from "react";
 
 const Loaderr = () => {
     return (
-        <div className=" w-20 h-20">
+        <div className=" w-20 h-20 ">
             <svg version="1.1" 
             id="L4"
             y='10px'

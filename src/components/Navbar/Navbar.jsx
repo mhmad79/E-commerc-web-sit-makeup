@@ -7,6 +7,7 @@ import Brandlink from "../Brandlink";
 import Navlinks from "../Navlinks";
 import Harticon from "../Icons/Harticon";
 import Carticon from "../Icons/Carticon";
+import { Link } from "react-router-dom";
 
 // import { NavLink } from "react-router-dom";
 
@@ -25,8 +26,9 @@ function Navbar () {
                 <Navlinks />
             <div className="flex">
                 <Harticon />
-
-               <Carticon />
+                <Link to='/cart'>
+                    <Carticon />
+                </Link>
             </div>
 
            </div>

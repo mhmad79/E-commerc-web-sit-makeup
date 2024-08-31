@@ -1,17 +1,19 @@
 import React from "react";
-import { useSearchStste } from "../../state/search-context";
+import { useSearchState } from "../../state/search-context";
 
-import Loaderr from "../Loaderr";
+
 import ProductCard from "../ProductCard";
 
 const Products = () => {
-    const [{ products }] = useSearchStste();
+    const [{ products }] = useSearchState();
     return ( 
 
-        <div className=' flex flex-wrap justify-center mb-10'>
+        <div className=' flex flex-wrap justify-center'>
         {products.length === 0 ? (
-            <Loaderr classes=' my-4' />
-            
+            <div className=" text-center mt-8">
+                <h4 className=" font-font-krona">Sorry no products</h4>
+                <p>Please try chaqnging your filters</p>
+            </div>
             ) : (
 
                 <>

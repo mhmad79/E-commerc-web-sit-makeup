@@ -1,18 +1,37 @@
-import React from "react";
-import PriceRange from "../PriceRange";
-import CategoriesBar from "../CategoriesBar";
+import React from 'react';
 
-const Sidebar = ({ setFilter }) => {
+import { BRANDS } from "../../contants/brands";
 
+import { setFilter } from '../../state/actionCreators';
+
+import Dropdown from '../Dropdown';
+import CategoriesBar from '../CategoriesBar';
+import PriceRange from '../PriceRange';
+import { useSearchState } from '../../state/search-context';
+
+const SideBar = () => {
+    const [, dispatch] = useSearchState();
+
+    const handleOnChange = e => {
+        const { name, value } = e.target;
+        dispatch(setFilter(name, value));
+    };
+
+    const handleOnSelect = value => {
+        dispatch(setFilter('productType', value));
+    };
 
     return (
-        <div className=" pl-6">
-           <PriceRange />
-           <div className=" bg-gray-100 px-6 py-2 mb-4 text-sm">
-           <CategoriesBar setFilter={setFilter}/>
-           </div>
+        <div className="pl-6">
+            <PriceRange onChange={handleOnChange} />
+
+            <Dropdown type="brand" values={['all', ...BRANDS]} onChange={handleOnChange} />
+
+            <div className="bg-gray-200 px-6 py-2 mb-4 text-sm">
+                <CategoriesBar onSelect={handleOnSelect} />
+            </div>
         </div>
-    )
+    );
 };
 
-export default Sidebar
+export default SideBar;

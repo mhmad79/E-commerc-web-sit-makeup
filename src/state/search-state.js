@@ -1,3 +1,4 @@
+
 export const initialSearchState = {
     products: [],
     filteredProducts: [],

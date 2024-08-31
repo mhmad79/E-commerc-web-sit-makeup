@@ -9,6 +9,7 @@ import Search from './pages/Search';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Product from './pages/Product';
+import Cart from './pages/cart';
 
 
 
@@ -21,6 +22,7 @@ export default function App() {
       <Navbar />
         <Routes>
         <Route exact path="/" element={<Home />} />
+        <Route exact path="/cart" element={<Cart />} />
         <Route path="/about" element={<About />} />
         <Route path="/search" element={<Search />} />
         <Route path="/product/:id" element={<Product />} />
